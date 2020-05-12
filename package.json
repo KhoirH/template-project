@@ -1,0 +1,18 @@
+{
+  "name": "mimin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss src/dists/scss/main.scss   src/dists/css/main.min.css --output-style compressed",
+    "compile-css": "node-sass --include-path scss src/dists/scss/main.scss   src/dists/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run compile-css\""
+  },
+  "author": "",
+  "license": "ISC"
+}
